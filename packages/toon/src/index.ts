@@ -1,16 +1,25 @@
+<<<<<<< HEAD
 import type { DecodeOptions, EncodeOptions, JsonValue, ResolvedDecodeOptions, ResolvedEncodeOptions, Schema, StreamDecodeOptions, StreamEncodeOptions, ValidationError, ValidationResult } from './types'
+=======
+import type { DecodeOptions, EncodeOptions, JsonValue, ResolvedDecodeOptions, ResolvedEncodeOptions } from './types'
+>>>>>>> parent of 3ef97e7 (- Analyzed current encode/decode implementation)
 import { DEFAULT_DELIMITER } from './constants'
 import { decodeValueFromLines } from './decode/decoders'
 import { expandPathsSafe } from './decode/expand'
 import { LineCursor, toParsedLines } from './decode/scanner'
 import { encodeValue } from './encode/encoders'
 import { normalizeValue } from './encode/normalize'
+<<<<<<< HEAD
 import { decodeStream, encodeStream } from './stream'
 import { validateJson, validateToon } from './validation'
 
 export { DEFAULT_DELIMITER, DELIMITERS } from './constants'
 export { decodeStream, encodeStream } from './stream'
 export { validateJson, validateToon } from './validation'
+=======
+
+export { DEFAULT_DELIMITER, DELIMITERS } from './constants'
+>>>>>>> parent of 3ef97e7 (- Analyzed current encode/decode implementation)
 export type {
   DecodeOptions,
   Delimiter,
@@ -22,11 +31,14 @@ export type {
   JsonValue,
   ResolvedDecodeOptions,
   ResolvedEncodeOptions,
+<<<<<<< HEAD
   Schema,
   StreamDecodeOptions,
   StreamEncodeOptions,
   ValidationError,
   ValidationResult,
+=======
+>>>>>>> parent of 3ef97e7 (- Analyzed current encode/decode implementation)
 } from './types'
 
 /**

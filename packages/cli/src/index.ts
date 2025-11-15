@@ -65,6 +65,7 @@ export const mainCommand: CommandDef<{
     description: string
     default: false
   }
+<<<<<<< HEAD
   stream: {
     type: 'boolean'
     description: string
@@ -79,6 +80,8 @@ export const mainCommand: CommandDef<{
     type: 'string'
     description: string
   }
+=======
+>>>>>>> parent of 3ef97e7 (- Analyzed current encode/decode implementation)
 }> = defineCommand({
   meta: {
     name,
@@ -140,6 +143,7 @@ export const mainCommand: CommandDef<{
       description: 'Show token statistics',
       default: false,
     },
+<<<<<<< HEAD
     stream: {
       type: 'boolean',
       description: 'Enable streaming mode for large datasets',
@@ -154,6 +158,8 @@ export const mainCommand: CommandDef<{
       type: 'string',
       description: 'Path to JSON schema file for validation',
     },
+=======
+>>>>>>> parent of 3ef97e7 (- Analyzed current encode/decode implementation)
   },
   async run({ args }) {
     const input = args.input
@@ -223,7 +229,6 @@ export const mainCommand: CommandDef<{
           keyFolding: keyFolding as NonNullable<EncodeOptions['keyFolding']>,
           flattenDepth,
           printStats: args.stats === true,
-          stream: args.stream === true,
         })
       }
       else {
@@ -233,7 +238,6 @@ export const mainCommand: CommandDef<{
           indent,
           strict: args.strict !== false,
           expandPaths: expandPaths as NonNullable<DecodeOptions['expandPaths']>,
-          stream: args.stream === true,
         })
       }
     }

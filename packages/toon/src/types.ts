@@ -97,6 +97,7 @@ export interface BlankLineInfo {
 // #endregion
 
 export type Depth = number
+<<<<<<< HEAD
 
 // #region Streaming types
 
@@ -149,3 +150,5 @@ export interface ValidationResult {
 }
 
 // #endregion
+=======
+>>>>>>> parent of 3ef97e7 (- Analyzed current encode/decode implementation)
