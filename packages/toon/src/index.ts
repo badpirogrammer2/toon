@@ -6,6 +6,10 @@ import { LineCursor, toParsedLines } from './decode/scanner'
 import { encodeValue } from './encode/encoders'
 import { normalizeValue } from './encode/normalize'
 
+export { decodeBinary, decodeBinaryWithHeaders } from './binary/binary-decoders'
+export { encodeBinary } from './binary/binary-encoders'
+export type { BinaryDecodeOptions, BinaryEncodeOptions, ResolvedBinaryDecodeOptions, ResolvedBinaryEncodeOptions } from './binary/binary-types'
+
 export { DEFAULT_DELIMITER, DELIMITERS } from './constants'
 export type {
   DecodeOptions,
